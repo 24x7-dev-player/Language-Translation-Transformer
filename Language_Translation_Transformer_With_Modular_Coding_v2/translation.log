@@ -1,83 +1,86 @@
-2024-06-23 21:16:12,908 INFO Code Start...
-2024-06-23 21:16:12,908 INFO Config Loaded Successfully!
-2024-06-23 21:16:12,908 INFO Training Start...
-2024-06-23 21:16:12,941 INFO Using device cuda
-2024-06-23 21:16:12,941 INFO Make Model Folder Called Weights
-2024-06-23 21:16:12,942 INFO Dataset load Starting ...
-2024-06-23 21:17:23,632 INFO Loaded IIT Bombay English-Hindi Dataset Successfully!
-2024-06-23 21:17:23,633 INFO Create Tokenizer File path Successfully!
-2024-06-23 21:17:23,652 INFO Create Tokenizer File path Successfully!
-2024-06-23 21:17:23,665 INFO Source and Target Tokenizer Built Successfully!
-2024-06-23 21:17:23,741 INFO Splitting dataset Successfully!
-2024-06-23 21:17:23,741 INFO Preprocessing with Bilingual Dataset Starting ... 
-2024-06-23 21:17:23,745 INFO Preprocessing with Bilingual Dataset Successfully!
-2024-06-23 21:17:23,753 ERROR An error occurred
-Traceback (most recent call last):
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\main.py", line 20, in <module>
-    train_model(config)  # Training model with the config arguments
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\train.py", line 31, in train_model
-    train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt = get_ds(config)
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\getdata\get_ds.py", line 41, in get_ds
-    tgt_ids = tokenizer_tgt.encode(pair['translation'][config['lang_tgt']]).ids
-KeyError: 'it'
-2024-06-23 21:49:50,104 INFO Code Start...
-2024-06-23 21:49:50,104 INFO Config Loaded Successfully!
-2024-06-23 21:49:50,105 INFO Training Start...
-2024-06-23 21:49:50,131 INFO Using device cuda
-2024-06-23 21:49:50,131 INFO Make Model Folder Called Weights
-2024-06-23 21:49:50,132 INFO Dataset load Starting ...
-2024-06-23 21:50:08,377 ERROR An error occurred
-Traceback (most recent call last):
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\main.py", line 20, in <module>
-    train_model(config)  # Training model with the config arguments
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\train.py", line 31, in train_model
-    train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt = get_ds(config)
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\getdata\get_ds.py", line 16, in get_ds
-    ds_raw = load_dataset('wmt16', 'en-hi', split='train[:10%]')  # Adjust split if needed
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\load.py", line 2594, in load_dataset
-    builder_instance = load_dataset_builder(
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\load.py", line 2303, in load_dataset_builder
-    builder_instance: DatasetBuilder = builder_cls(
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\builder.py", line 374, in __init__
-    self.config, self.config_id = self._create_builder_config(
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\builder.py", line 601, in _create_builder_config
-    raise ValueError(
-ValueError: BuilderConfig 'en-hi' not found. Available: ['cs-en', 'de-en', 'fi-en', 'ro-en', 'ru-en', 'tr-en']
-2024-06-23 21:51:04,716 INFO Code Start...
-2024-06-23 21:51:04,717 INFO Config Loaded Successfully!
-2024-06-23 21:51:04,717 INFO Training Start...
-2024-06-23 21:51:04,742 INFO Using device cuda
-2024-06-23 21:51:04,742 INFO Make Model Folder Called Weights
-2024-06-23 21:51:04,742 INFO Dataset load Starting ...
-2024-06-23 21:51:04,742 ERROR An error occurred
-Traceback (most recent call last):
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\main.py", line 20, in <module>
-    train_model(config)  # Training model with the config arguments
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\train.py", line 31, in train_model
-    train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt = get_ds(config)
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\getdata\get_ds.py", line 16, in get_ds
-    ds_raw = load_dataset('opus', 'opus', name='opus_books', split='train[:10%]', language_pair=('en', 'hi'))
-TypeError: load_dataset() got multiple values for argument 'name'
-2024-06-23 21:51:39,737 INFO Code Start...
-2024-06-23 21:51:39,738 INFO Config Loaded Successfully!
-2024-06-23 21:51:39,738 INFO Training Start...
-2024-06-23 21:51:39,761 INFO Using device cuda
-2024-06-23 21:51:39,761 INFO Make Model Folder Called Weights
-2024-06-23 21:51:39,761 INFO Dataset load Starting ...
-2024-06-23 21:51:40,536 ERROR An error occurred
-Traceback (most recent call last):
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\main.py", line 20, in <module>
-    train_model(config)  # Training model with the config arguments
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\train.py", line 31, in train_model
-    train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt = get_ds(config)
-  File "D:\Langauge Translation Transformer\Language_Translation_Transformer_With_Modular_Coding\getdata\get_ds.py", line 16, in get_ds
-    ds_raw = load_dataset('opus', name='opus_books', split='train[:10%]', language_pair=('en', 'hi'))
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\load.py", line 2594, in load_dataset
-    builder_instance = load_dataset_builder(
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\load.py", line 2266, in load_dataset_builder
-    dataset_module = dataset_module_factory(
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\load.py", line 1908, in dataset_module_factory
-    raise e1 from None
-  File "C:\Users\Danjin\anaconda3\envs\python10\lib\site-packages\datasets\load.py", line 1858, in dataset_module_factory
-    raise DatasetNotFoundError(f"Dataset '{path}' doesn't exist on the Hub or cannot be accessed.") from e
-datasets.exceptions.DatasetNotFoundError: Dataset 'opus' doesn't exist on the Hub or cannot be accessed.
+2024-06-24 00:42:15,905 INFO Code Start...
+2024-06-24 00:42:15,905 INFO Config Loaded Successfully!
+2024-06-24 00:42:15,905 INFO Training Start...
+2024-06-24 00:42:15,932 INFO Using device cuda
+2024-06-24 00:42:15,932 INFO Make Model Folder Called Weights
+2024-06-24 00:42:15,932 INFO Dataset load Starting ...
+2024-06-24 00:42:24,984 INFO Loaded IIT Bombay English-Hindi Dataset Successfully!
+2024-06-24 00:42:24,984 INFO Create Tokenizer File path Successfully!
+2024-06-24 00:42:24,993 INFO Create Tokenizer File path Successfully!
+2024-06-24 00:42:25,003 INFO Source and Target Tokenizer Built Successfully!
+2024-06-24 00:42:25,004 INFO Splitting dataset Successfully!
+2024-06-24 00:42:25,004 INFO Preprocessing with Bilingual Dataset Starting ... 
+2024-06-24 00:42:25,005 INFO Preprocessing with Bilingual Dataset Successfully!
+2024-06-24 00:42:26,341 INFO Max length of source sentence: 75
+2024-06-24 00:42:26,341 INFO Max length of target sentence: 98
+2024-06-24 00:42:26,341 INFO Dataset with tokenizer loaded Successfully!
+2024-06-24 00:42:26,342 INFO Transformer Building starting ...
+2024-06-24 00:42:26,342 INFO Initializing Model on GPU starting ...
+2024-06-24 00:42:26,350 INFO Building Transformer ... 
+2024-06-24 00:42:26,350 INFO Creating Embedding ... 
+2024-06-24 00:42:26,546 INFO Embedding Successfully!
+2024-06-24 00:42:26,547 INFO Creating Positional Encoding ... 
+2024-06-24 00:42:26,553 INFO Positional Encoding Successfully!
+2024-06-24 00:42:26,553 INFO Creating Encoder Block ... 
+2024-06-24 00:42:26,553 INFO Creating Multi Head Attention or Self Attention ... 
+2024-06-24 00:42:26,553 INFO Creating Feed Forward block ... 
+2024-06-24 00:42:26,554 INFO Combine layers into EncoderBlock with Residual Network ... 
+2024-06-24 00:42:26,554 INFO Layer Normalization Starting ... 
+2024-06-24 00:42:26,671 INFO Creating Encoder Block Successfully!
+2024-06-24 00:42:26,672 INFO Creating Decoder Block ... 
+2024-06-24 00:42:26,672 INFO Creating Multi Head Attention or Self Attention ... 
+2024-06-24 00:42:26,672 INFO Creating Feed Forward block ... 
+2024-06-24 00:42:26,672 INFO Combine layers into DecoderBlock with Residual Network ... 
+2024-06-24 00:42:26,672 INFO Layer Normalization Starting ... 
+2024-06-24 00:42:26,811 INFO Creating Decoder Block Successfully!
+2024-06-24 00:42:26,811 INFO Creating the Encoder and Decoder by using the EncoderBlocks and DecoderBlocks Successfully
+2024-06-24 00:42:26,890 INFO Creating Projection layer Successfully!
+2024-06-24 00:42:26,890 INFO Creating the transformer by combining everything
+2024-06-24 00:42:26,891 INFO Parameters Initialization ... 
+2024-06-24 00:42:27,384 INFO Model loaded Successfully
+2024-06-24 00:42:27,385 INFO Experiment Will show in Runs Folder
+2024-06-24 00:42:27,390 INFO Configuration Optimization
+2024-06-24 00:42:28,718 INFO Initializing Epochs and Step
+2024-06-24 00:42:28,719 INFO Check Pretrain Model is load or Not
+2024-06-24 00:42:28,719 INFO Initializing Loss Function
+2024-06-24 00:42:28,719 INFO Training loop Start
+2024-06-24 00:57:25,805 INFO Evaluate Model Performance
+2024-06-24 00:57:26,041 INFO Model Saving in Weights Folder
+2024-06-24 01:11:46,530 INFO Evaluate Model Performance
+2024-06-24 01:11:47,026 INFO Model Saving in Weights Folder
+2024-06-24 01:26:07,486 INFO Evaluate Model Performance
+2024-06-24 01:26:07,734 INFO Model Saving in Weights Folder
+2024-06-24 01:40:27,561 INFO Evaluate Model Performance
+2024-06-24 01:40:27,880 INFO Model Saving in Weights Folder
+2024-06-24 01:54:47,947 INFO Evaluate Model Performance
+2024-06-24 01:54:48,213 INFO Model Saving in Weights Folder
+2024-06-24 02:09:08,154 INFO Evaluate Model Performance
+2024-06-24 02:09:08,410 INFO Model Saving in Weights Folder
+2024-06-24 02:23:27,855 INFO Evaluate Model Performance
+2024-06-24 02:23:28,185 INFO Model Saving in Weights Folder
+2024-06-24 02:37:47,821 INFO Evaluate Model Performance
+2024-06-24 02:37:48,049 INFO Model Saving in Weights Folder
+2024-06-24 02:52:07,332 INFO Evaluate Model Performance
+2024-06-24 02:52:07,572 INFO Model Saving in Weights Folder
+2024-06-24 03:06:26,541 INFO Evaluate Model Performance
+2024-06-24 03:06:26,756 INFO Model Saving in Weights Folder
+2024-06-24 03:20:46,069 INFO Evaluate Model Performance
+2024-06-24 03:20:46,313 INFO Model Saving in Weights Folder
+2024-06-24 03:35:05,081 INFO Evaluate Model Performance
+2024-06-24 03:35:05,333 INFO Model Saving in Weights Folder
+2024-06-24 03:49:24,105 INFO Evaluate Model Performance
+2024-06-24 03:49:24,348 INFO Model Saving in Weights Folder
+2024-06-24 04:03:43,042 INFO Evaluate Model Performance
+2024-06-24 04:03:43,232 INFO Model Saving in Weights Folder
+2024-06-24 04:18:01,382 INFO Evaluate Model Performance
+2024-06-24 04:18:01,578 INFO Model Saving in Weights Folder
+2024-06-24 04:32:19,618 INFO Evaluate Model Performance
+2024-06-24 04:32:19,951 INFO Model Saving in Weights Folder
+2024-06-24 04:46:41,348 INFO Evaluate Model Performance
+2024-06-24 04:46:41,543 INFO Model Saving in Weights Folder
+2024-06-24 05:00:59,394 INFO Evaluate Model Performance
+2024-06-24 05:00:59,680 INFO Model Saving in Weights Folder
+2024-06-24 05:15:16,936 INFO Evaluate Model Performance
+2024-06-24 05:15:17,184 INFO Model Saving in Weights Folder
+2024-06-24 05:29:34,730 INFO Evaluate Model Performance
+2024-06-24 05:29:34,935 INFO Model Saving in Weights Folder
