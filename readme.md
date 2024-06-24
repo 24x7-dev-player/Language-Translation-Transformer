@@ -19,8 +19,8 @@ For a simpler, non-modular implementation, refer to the Language_Translation_Tra
 ## Explanation video Hinglish :
 ## Explanation Video English :
 
-![Image Title](PDF_images/1.png)
-![Image Title](PDF_images/2.png)
+![Image Title](PDF_images\1.png)
+![Image Title](PDF_images\2.png)
 ![Image Title](PDF_images/3.png)
 ![Image Title](PDF_images/4.png)
 ![Image Title](PDF_images/5.png)
