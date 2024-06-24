@@ -16,8 +16,8 @@ For a simpler, non-modular implementation, refer to the Language_Translation_Tra
  - Run the model: jupyter notebook Ipynb_file.ipynb
 
 
-## Explanation video Hinglish :
-## Explanation Video English :
+## Explanation video Hinglish : https://youtu.be/4haIxWjNZAc
+## Explanation Video English : https://youtu.be/W7Oy2-bf7aI
 
 ![Image Title](PDF_Images/1.png)
 ![Image Title](PDF_Images/2.png)
